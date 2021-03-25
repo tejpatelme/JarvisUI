@@ -120,6 +120,7 @@ header {
   overflow-y: scroll;
   height: 85vh;
   position: sticky;
+  position: -webkit-sticky;
   top: 5rem;
   flex-shrink: 0;
 }
