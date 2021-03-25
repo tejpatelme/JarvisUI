@@ -114,40 +114,44 @@ body {
   box-shadow: 0px 0px 0px 2px #ffffff;
 }
 
-.badge-text-green {
+.badge-text {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 0.25rem;
+}
+
+.text-green {
   background: var(--success-green);
-  font-size: 12px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 0 0.25rem;
 }
 
-.badge-text-yellow {
+.text-yellow {
   background: var(--warning-yellow);
-  font-size: 12px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 0 0.25rem;
 }
 
-.badge-text-red {
+.text-red {
   background: var(--danger-red);
-  font-size: 12px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 0 0.25rem;
 }
 
-.badge-text-blue {
+.text-blue {
   background: var(--info-blue);
-  font-size: 12px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 0 0.25rem;
+}
+
+.bg-green {
+  background: var(--success-green);
+}
+
+.bg-yellow {
+  background: var(--warning-yellow);
+}
+
+.bg-red {
+  background: var(--danger-red);
+}
+
+.bg-blue {
+  background: var(--info-blue);
 }
 
 /* ALERTS */
@@ -270,6 +274,12 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 8px;
+}
+
+.product-card > .badge-text {
+  position : absolute;
+  top : 0.3rem;
+  left : 0;
 }
 
 .product-card > .product-details span {
