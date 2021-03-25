@@ -49,8 +49,8 @@ header {
   cursor: pointer;
   outline: none;
   border: 0;
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background: black;
   border-radius: 50%;
   position: fixed;
