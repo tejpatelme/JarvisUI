@@ -185,6 +185,7 @@ header {
   border: 0.25rem;
   margin-bottom: 1.5rem;
   z-index: -1;
+  border-radius: 0.25rem;
 }
 
 pre {
