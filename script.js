@@ -1,5 +1,3 @@
-console.log("working");
-
 const button = document.querySelector(".menu-button");
 const sidebar = document.querySelector(".sidebar");
 const modalButton = document.querySelector(".modal-button");
