@@ -1,0 +1,244 @@
+/*Navigation Header*/
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1;
+}
+
+.nav-container {
+  padding: 1rem;
+  max-width: 1200px;
+  border-bottom: 1px solid lightgray;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container .logo h1 {
+  font-size: 1.6rem;
+}
+
+.nav-container .logo span {
+  color: var(--primary-color);
+}
+
+.nav-container .nav-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-container .nav-links li a {
+  margin-right: 2.5rem;
+  color: var(--gray-two);
+  font-weight: 500;
+}
+
+.nav-container .nav-links li:nth-child(3) > a {
+  margin: 0;
+}
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  background: black;
+  border-radius: 50%;
+  position: fixed;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-button svg {
+  fill: white;
+}
+
+/*Main content*/
+
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  max-width: 740px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--gray-one);
+}
+
+.main-content h1 span {
+  color: var(--primary-color);
+}
+
+.main-content p {
+  color: var(--gray-two);
+  font-size: 20px;
+  margin: auto auto 1.5rem auto;
+  line-height: 150%;
+}
+
+.cta-buttons .btn-icon-leading > span {
+  transition-duration: 0.3s;
+}
+
+.cta-buttons .btn-icon-leading:hover > span {
+  transform: translateX(4px);
+}
+
+/*Documantation page*/
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+}
+
+.sidebar {
+  padding: 1rem;
+  width: 250px;
+  overflow-y: scroll;
+  height: 85vh;
+  position: sticky;
+  top: 5rem;
+  flex-shrink: 0;
+}
+
+.sidebar .nav-header {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 1.25rem auto;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .nav-link {
+  color: var(--gray-three);
+  font-weight: 500;
+}
+
+.sidebar li {
+  padding: 0.5rem 0;
+}
+
+.sidebar .active {
+  color: var(--primary-color);
+}
+
+.container .content-main {
+  padding: 3rem 0 0 3rem;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 1.2rem;
+}
+
+.content-main {
+  max-width: 700px;
+  margin-bottom: 1.25rem;
+}
+
+.content-main h1 {
+  margin-bottom: 1.5rem;
+}
+
+.content-main p {
+  margin-bottom: 1.5rem;
+}
+
+.content-main h4 {
+  margin-bottom: 1.5rem;
+}
+
+.showcase-box {
+  padding: 1rem;
+  background-color: #e5e7eb;
+  border: 0.25rem;
+  margin-bottom: 1.5rem;
+  z-index: -1;
+}
+
+pre {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: white;
+  }
+  .container {
+    display: block;
+  }
+  .container .content-main {
+    padding: 1rem;
+  }
+  .menu-button {
+    display: flex;
+  }
+
+  .main-content h1 {
+    font-size: 2rem;
+  }
+
+  .main-content p {
+    font-size: 1rem;
+  }
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.tg td {
+  border: 1px solid lightgray;
+  font-family: inherit;
+  font-size: 0.875rem;
+  overflow: hidden;
+  padding: 0.75rem 0.5rem;
+  word-break: normal;
+}
+.tg th {
+  border: 1px solid lightgray;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  overflow: hidden;
+  padding: 0.75rem 0.5rem;
+  word-break: normal;
+}
