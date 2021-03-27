@@ -1,13 +1,13 @@
-const button = document.querySelector(".menu-button");
+const menuButton = document.querySelector(".menu-button");
 const sidebar = document.querySelector(".sidebar");
-const modalButton = document.querySelector(".modal-button");
-const modalExample = document.querySelector(".modal-example");
-const closeButton = document.querySelector(".btn-close");
 
 let open = false;
+
+//checking if width of the container is 768px or less
 let x = window.matchMedia("(min-width:768px)");
 
-const handleClick = () => {
+//Opening & closing of sidebar on press of menuButton
+const handleOpenCloseSidebar = () => {
   if (open) {
     sidebar.style.display = "none";
     open = false;
@@ -17,6 +17,7 @@ const handleClick = () => {
   }
 };
 
+//Hiding/showing sidebar based on the specified breakpoint
 function handleChange(query) {
   if (query.matches) {
     sidebar.style.display = "block";
@@ -25,18 +26,9 @@ function handleChange(query) {
   }
 }
 
-function openModal() {
-  modalExample.style.display = "flex";
-}
-
-function closeModal() {
-  modalExample.style.display = "none";
-}
-
 x.addListener(handleChange);
 
+//initial check for sidebar
 handleChange(x);
 
-button.addEventListener("click", handleClick);
-modalButton.addEventListener("click", openModal);
-closeButton.addEventListener("click", closeModal);
+menuButton.addEventListener("click", handleOpenCloseSidebar);
