@@ -14,8 +14,7 @@ body {
 }
 
 h1,
-h2
-h3,
+h2 h3,
 h4,
 h5,
 h6,
@@ -257,9 +256,9 @@ button {
 }
 
 .product-card > .badge-text {
-  position : absolute;
-  top : 0.3rem;
-  left : 0;
+  position: absolute;
+  top: 0.3rem;
+  left: 0;
 }
 
 .product-card > .product-details span {
@@ -386,4 +385,41 @@ button {
 .input:focus {
   border: 0;
   box-shadow: 0px 0px 0px 3px #a78bfa;
+}
+
+/* NAVIGATION BAR */
+
+.top-navigation {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background: white;
+  z-index: 1;
+}
+
+.nav-container {
+  padding: 1rem;
+  max-width: 1200px;
+  border-bottom: 1px solid lightgray;
+  height: 5rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--gray-two);
+  font-weight: 500;
+}
+
+.nav-links ul > * + * {
+  margin-left: 2.5rem;
 }
