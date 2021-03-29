@@ -230,20 +230,6 @@
   position: absolute;
 }
 
-/* TEXT ALIGNS */
-
-.text-right {
-  text-align: right;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
 /* SHADOWS */
 
 .shadow-sm {
@@ -283,8 +269,16 @@
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .justify-start {
@@ -299,6 +293,18 @@
   justify-content: end;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
 .align-start {
   align-items: flex-start;
 }
@@ -311,11 +317,65 @@
   align-items: flex-end;
 }
 
+.align-stretch {
+  align-items: stretch;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flex-grow-0 {
+  flex-grow: 0;
+}
+
+.flex-shrink-1 {
+  flex-shrink: 1;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-end {
+  align-self: flex-end;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.self-center {
+  align-self: stretch;
+}
+
 .wrap {
   flex-wrap: wrap;
 }
 
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
 /* TEXT UTILITIES */
+
+/* Text Aligns */
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
 
 /* Font Sizes */
 
@@ -332,7 +392,7 @@
 }
 
 .text-lg {
-  font-size : 1.125rem;
+  font-size: 1.125rem;
 }
 
 .text-xl {
@@ -340,7 +400,7 @@
 }
 
 .text-2xl {
-  font-size : 1.5rem;
+  font-size: 1.5rem;
 }
 
 .text-3xl {
@@ -348,7 +408,7 @@
 }
 
 .text-4xl {
-  font-size : 2.25rem;
+  font-size: 2.25rem;
 }
 
 .text-5xl {
@@ -374,7 +434,7 @@
 }
 
 .text-medium {
-  font-weight : 500;
+  font-weight: 500;
 }
 
 .text-semibold {
@@ -391,4 +451,18 @@
 
 .text-black {
   font-weight: 900;
+}
+
+/* MAX WIDTH */
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-half {
+  max-width: 50%;
+}
+
+.max-w-xs {
+  max-width: 20rem; /*320px*/
 }
