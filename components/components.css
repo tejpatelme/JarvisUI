@@ -215,9 +215,10 @@ button {
 /* Card Buttons */
 
 .card-button {
+  border: 0;
   position: absolute;
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.875rem;
+  width: 1.875rem;
   border-radius: 50%;
   top: 6px;
   right: 6px;
@@ -228,7 +229,8 @@ button {
 }
 
 .card > svg {
-  fill: var(--gray-three);
+  fill: var(--gray-four);
+  flex-shrink: 0;
 }
 
 /* Product Card */
