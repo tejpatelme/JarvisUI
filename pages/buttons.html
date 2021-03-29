@@ -11,7 +11,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="top-navigation">
       <div class="nav-container">
         <div class="logo">
           <a href="/index.html">
@@ -68,41 +68,63 @@
           Buttons allow users to take actions, and make choices, with a single
           tap
         </p>
-        <h4>Primary and Secondary buttons</h4>
-        <div class="showcase-box">
-          <button class="btn btn-primary">Primary</button>
 
-          <button class="btn btn-secondary">Secondary</button>
+        <h4 class="mt-5">Button Sizes</h4>
+        <p>Button comes with four sizes</p>
+        <div class="showcase-box">
+          <button class="btn btn-xs btn-primary">Tiny</button>
+          <button class="btn btn-sm btn-primary">Small</button>
+          <button class="btn btn-md btn-primary">Medium</button>
+          <button class="btn btn-lg btn-primary">Large</button>
         </div>
 
         <pre>
           <code class="language-html">
-            &ltbutton class="btn btn-primary">Primary&lt/button>
+            &ltbutton class="btn btn-xs btn-primary">Tiny&lt/button>
+
+            &ltbutton class="btn btn-sm btn-primary">Small&lt/button>
+
+            &ltbutton class="btn btn-md btn-primary">Medium&lt/button>
+
+            &ltbutton class="btn btn-lg btn-primary">Large&lt/button>
+          </code>
+        </pre>
+
+        <h4 class="mt-5">Primary and Secondary buttons</h4>
+        <div class="showcase-box">
+          <button class="btn btn-lg btn-primary">Primary</button>
+
+          <button class="btn btn-lg btn-secondary">Secondary</button>
+        </div>
+
+        <pre>
+          <code class="language-html">
+            &ltbutton class="btn btn-lg btn-primary">Primary&lt/button>
             
-            &ltbutton class="btn btn-secondary">Secondary&lt/button>
+            &ltbutton class="btn btn-lg btn-secondary">Secondary&lt/button>
           </code>
         </pre>
 
         <h4 class="mt-5">Error States buttons</h4>
         <div class="showcase-box flex">
-          <button class="btn btn-success mr-2">Success</button>
+          <button class="btn btn-lg btn-success mr-2">Success</button>
 
-          <button class="btn btn-danger mr-2">Error</button>
+          <button class="btn btn-lg btn-danger mr-2">Error</button>
 
-          <button class="btn btn-warning mr-2">Warning</button>
+          <button class="btn btn-lg btn-warning mr-2">Warning</button>
 
-          <button class="btn btn-info">Info</button>
+          <button class="btn btn-lg btn-info">Info</button>
         </div>
 
         <pre>
           <code class="language-html">
-            &ltbutton class="btn btn-success">Success&lt/button>
+            &ltbutton class="btn btn-lg btn-success">Success&lt/button>
             
-            &ltbutton class="btn btn-danger">Error&lt/button>
+            &ltbutton class="btn btn-lg btn-danger">Error&lt/button>
             
-            &ltbutton class="btn btn-warning">Warning&lt/button>
+            &ltbutton class="btn btn-lg btn-warning">Warning&lt/button>
             
-            &ltbutton class="btn btn-info">Info&lt/button>
+            &ltbutton class="btn btn-lg btn-info">Info&lt/button>
           </code>
         </pre>
 
@@ -120,7 +142,7 @@
             </span>
             Icon Button
           </button>
-          <button class="btn btn-icon-leading">
+          <button class="btn btn-lg btn-icon-leading">
             Icon Button
             <span>
               <svg width="1em" height="1em" viewBox="0 0 24 24">
@@ -135,7 +157,7 @@
 
         <pre>
           <code class="language-html">
-            &ltbutton class="btn btn-icon-trailing">
+            &ltbutton class="btn btn-lg btn-icon-trailing">
               &ltspan>
                 &ltsvg width="1em" height="1em" viewBox="0 0 24 24">
                   &ltpath
@@ -147,7 +169,7 @@
               Icon Button
             &lt/button>
             
-            &ltbutton class="btn btn-icon-leading">
+            &ltbutton class="btn btn-lg btn-icon-leading">
               Icon Button
               &ltspan>
                 &ltsvg width="1em" height="1em" viewBox="0 0 24 24">
