@@ -1,8 +1,7 @@
 @import "helpers.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* RESETS */
-
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,7 +13,8 @@ body {
 }
 
 h1,
-h2 h3,
+h2,
+h3,
 h4,
 h5,
 h6,
@@ -92,47 +92,59 @@ button {
 
 /* BADGES */
 
-.badge-dot {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1;
+  font-weight: 500;
   position: absolute;
-  z-index: 1;
+  color: white;
+}
+
+.badge-dot {
+  height: 0.625rem;
+  width: 0.625rem;
+  border-radius: 50%;
   right: 2%;
   bottom: 2%;
   box-shadow: 0px 0px 0px 2px #ffffff;
 }
 
-.badge-dot-text {
+.badge-dot-number {
   height: 1.125rem;
-  width: 1.125rem;
-  font-size: 0.75rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  min-width: 1.125rem;
+  padding: 0.125rem;
+  border-radius: 1.25rem;
   top: -10px;
   right: -10px;
 }
 
-.dot-primary {
+.badge-text {
+  display: inline;
+  position: static;
+  text-transform: uppercase;
+  padding: 0.125rem 0.35rem;
+}
+
+.badge-primary {
   background-color: var(--primary-color);
 }
 
-.dot-green {
+.badge-green {
   background-color: var(--success-green);
 }
 
-.dot-red {
+.badge-red {
   background-color: var(--danger-red);
 }
 
-.dot-yellow {
+.badge-yellow {
   background-color: var(--warning-yellow);
 }
 
-.dot-blue {
+.badge-blue {
   background-color: var(--info-blue);
 }
 
@@ -140,46 +152,6 @@ button {
   display: inline-flex;
   position: relative;
   margin: 0.5rem;
-}
-
-.badge-text {
-  font-size: 12px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 0 0.25rem;
-}
-
-.text-green {
-  background: var(--success-green);
-}
-
-.text-yellow {
-  background: var(--warning-yellow);
-}
-
-.text-red {
-  background: var(--danger-red);
-}
-
-.text-blue {
-  background: var(--info-blue);
-}
-
-.bg-green {
-  background: var(--success-green);
-}
-
-.bg-yellow {
-  background: var(--warning-yellow);
-}
-
-.bg-red {
-  background: var(--danger-red);
-}
-
-.bg-blue {
-  background: var(--info-blue);
 }
 
 /* ALERTS */
