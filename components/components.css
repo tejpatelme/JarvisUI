@@ -100,16 +100,46 @@ button {
   z-index: 1;
   right: 2%;
   bottom: 2%;
+  box-shadow: 0px 0px 0px 2px #ffffff;
+}
+
+.badge-dot-text {
+  height: 1.125rem;
+  width: 1.125rem;
+  font-size: 0.75rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  top: -10px;
+  right: -10px;
+}
+
+.dot-primary {
+  background-color: var(--primary-color);
 }
 
 .dot-green {
-  background-color: green;
-  box-shadow: 0px 0px 0px 2px #ffffff;
+  background-color: var(--success-green);
 }
 
 .dot-red {
-  background-color: red;
-  box-shadow: 0px 0px 0px 2px #ffffff;
+  background-color: var(--danger-red);
+}
+
+.dot-yellow {
+  background-color: var(--warning-yellow);
+}
+
+.dot-blue {
+  background-color: var(--info-blue);
+}
+
+.badge-icon {
+  display: inline-flex;
+  position: relative;
+  margin: 0.5rem;
 }
 
 .badge-text {
@@ -268,12 +298,48 @@ button {
   font-weight: 600;
 }
 
+.btn-cart {
+  display: inline-block;
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  border: 0;
+  background-color: #c4b5fd;
+}
+
+.btn-cart-delete {
+  border-radius: 2px;
+  background-color: #f87171;
+}
+
+.btn-cart-delete > svg {
+  fill: white;
+}
+
 /* Text Card */
 
 .text-card {
   background: white;
   padding: 1.25rem;
   color: var(--gray-two);
+}
+
+/* Cart Card */
+
+.cart-card {
+  padding: 1.25rem;
+  border-radius: 4px;
+}
+
+.cart-card img {
+  object-fit: cover;
+}
+
+.cart-details {
+  padding-left: 1rem;
 }
 
 /* BUTTONS */

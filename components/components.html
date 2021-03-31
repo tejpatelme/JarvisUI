@@ -9,12 +9,22 @@
   </head>
   <body>
     <!-- BADGE -->
-    <div class="badge-dot dot-green"></div>
+    <!-- <div class="badge-dot dot-green"></div> -->
 
-    <span class="badge-text text-green">Green</span>
+    <div class="badge-icon">
+      <svg width="1.5rem" height="1.5rem" viewBox="0 0 24 24">
+        <path
+          d="M20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"
+          fill="currentColor"
+        ></path>
+        <div class="badge-dot badge-dot-text dot-primary">1</div>
+      </svg>
+    </div>
+
+    <!-- <span class="badge-text text-green">Green</span>
     <span class="badge-text text-red">Red</span>
     <span class="badge-text text-yellow">Yellow</span>
-    <span class="badge-text text-blue">Blue</span>
+    <span class="badge-text text-blue">Blue</span> -->
 
     <!-- AVATAR -->
     <div class="avatar avatar-sl">
@@ -119,6 +129,40 @@
       </button>
       <div class="badge-text bg-blue">New</div>
     </div>
+
+    <!-- Cart Card -->
+
+    <div class="cart-card flex shadow-sm">
+      <div style="width: 150px; height: 150px">
+        <img
+          width="100%"
+          height="100%"
+          src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/1996794/2020/11/19/eeddb240-a694-448b-8a5d-7e51f5a935e31605783640839-Roadster-Men-Olive-Green-Solid-Raw-Edge-Round-Neck-T-shirt-3-1.jpg"
+          alt="product"
+        />
+      </div>
+      <div class="cart-details flex flex-col justify-between">
+        <div>
+          <p class="text-base text-semibold mb-2">IWC Watches</p>
+          <p class="mb-2">Wrist Watch</p>
+          <p class="text-bold">Rs. 2000</p>
+        </div>
+        <div>
+          <button class="btn-cart">–</button>
+          <span class="text-bold">3</span>
+          <button class="btn-cart mr-4">+</button>
+          <button class="btn-cart btn-cart-delete">
+            <svg width="1.25rem" height="1.25rem" viewBox="0 0 24 24">
+              <path
+                d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6v12z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text Card -->
 
     <div class="text-card shadow-sm">
       <p>
