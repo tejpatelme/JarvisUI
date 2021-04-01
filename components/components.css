@@ -93,7 +93,7 @@ button {
 /* BADGES */
 
 .badge {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   font-size: 0.75rem;
@@ -126,6 +126,13 @@ button {
   position: static;
   text-transform: uppercase;
   padding: 0.125rem 0.35rem;
+}
+
+.badge-rating {
+  position: static;
+  font-size: 0.875rem;
+  padding: 0.25rem;
+  border-radius: 0.125rem;
 }
 
 .badge-primary {
