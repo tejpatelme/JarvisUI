@@ -198,3 +198,24 @@ pre {
   padding: 0.75rem 0.5rem;
   word-break: normal;
 }
+
+/*Code copy button*/
+
+.code-toolbar > .toolbar {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.code-toolbar {
+  position: relative;
+}
+
+.code-toolbar > .toolbar button {
+  font-family: inherit;
+  border: 0;
+  padding: 0.25rem;
+  background: #4b5563;
+  color: white;
+  border-radius: 0.25rem;
+}
