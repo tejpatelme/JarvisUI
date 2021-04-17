@@ -445,14 +445,19 @@ button {
 }
 
 .nav-container {
-  padding: 1rem;
+  padding: 1rem 3rem;
   max-width: 1200px;
   border-bottom: 1px solid lightgray;
-  height: 5rem;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-contianer {
+    padding: 1rem;
+  }
 }
 
 .nav-links ul {
