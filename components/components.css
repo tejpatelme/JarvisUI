@@ -332,6 +332,7 @@ button {
   border-radius: 4px;
   font-weight: 600;
   font-size: inherit;
+  font-family: inherit;
 }
 
 .btn-xs {
